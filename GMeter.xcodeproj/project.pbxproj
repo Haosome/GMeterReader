@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6180027116FEB351001FA3F3 /* GMeterMapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6180027016FEB351001FA3F3 /* GMeterMapOverlay.m */; };
+		6180027916FEBB70001FA3F3 /* GMeterMapOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6180027816FEBB70001FA3F3 /* GMeterMapOverlayView.m */; };
+		6180F16916E4249900E5CE19 /* GMeterMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618C47B9164B1F71006659E4 /* GMeterMapViewController.m */; };
+		6180F16C16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6180F16B16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.m */; };
+		61827452164BB9D600D521FD /* GMeterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 61827451164BB9D600D521FD /* GMeterAnnotation.m */; };
+		618426D316E407D90068A4A8 /* GMeterXMLDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 618426D216E407D90068A4A8 /* GMeterXMLDataHandler.m */; };
+		618426E916E412D00068A4A8 /* GMeterXMLDataHandlerMHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 618426E816E412D00068A4A8 /* GMeterXMLDataHandlerMHour.m */; };
+		618426EC16E420870068A4A8 /* GMeterXMLDataHandlerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 618426EB16E420870068A4A8 /* GMeterXMLDataHandlerFactory.m */; };
+		6184444116DDB6F70025E244 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6184443816DDB4110025E244 /* libCorePlot-CocoaTouch.a */; };
+		6184444216DDB7660025E244 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6186559B164EDAE70095A597 /* QuartzCore.framework */; };
+		6184848316FF76CF00E43D7A /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6184848216FF76CF00E43D7A /* overlay.png */; };
+		6184848A16FF867B00E43D7A /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 6184848916FF867B00E43D7A /* car.png */; };
+		6184C36216E6C9AD00CF6B00 /* GMeterScatterPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6184C36116E6C9AC00CF6B00 /* GMeterScatterPlotViewController.m */; };
+		6185123E1654A5E2009FD893 /* GMeterFileContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6185123D1654A5E2009FD893 /* GMeterFileContentViewController.m */; };
+		6185124216552466009FD893 /* GMeterUserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6185124116552466009FD893 /* GMeterUserListViewController.m */; };
+		6185890816F5070900779B90 /* GMeterXMLDataHandlerMMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 6185890716F5070900779B90 /* GMeterXMLDataHandlerMMonth.m */; };
+		6185890E16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6185890D16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.m */; };
+		618592F016F6022200EB6B2A /* GMeterXMLDataHandlerMDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 618592EF16F6022200EB6B2A /* GMeterXMLDataHandlerMDay.m */; };
+		6185D80A16C53473003FD52F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6185D80916C53473003FD52F /* libz.dylib */; };
+		6185F41A16D973C8008D55EA /* libtouchzipkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6185F41916D973BD008D55EA /* libtouchzipkit.a */; };
+		61863F22165186730024FBCB /* GMeterFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61863F21165186730024FBCB /* GMeterFileListViewController.m */; };
+		61863F28165190AF0024FBCB /* GMeterBarGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61863F27165190AF0024FBCB /* GMeterBarGraphViewController.m */; };
+		618AA1B716502CCE0026FFFE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618AA1B616502CCE0026FFFE /* GameKit.framework */; };
+		618C47BD164B2069006659E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618C47BC164B2069006659E4 /* MapKit.framework */; };
+		618CBBCF16506710001BD7EC /* GMeterUserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618CBBCE16506710001BD7EC /* GMeterUserDetailViewController.m */; };
+		618CBBD516508CCE001BD7EC /* GMeterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 618CBBD416508CCE001BD7EC /* GMeterModel.m */; };
+		618D894B16543BD500325E38 /* GMeterBarGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 618D894A16543BD500325E38 /* GMeterBarGraphView.m */; };
+		61947C4F16F012770071935E /* GMeterXMLDataHandlerSMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 61947C4E16F012770071935E /* GMeterXMLDataHandlerSMonth.m */; };
+		6194E7E9164AE91400FA874A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194E7E8164AE91400FA874A /* UIKit.framework */; };
+		6194E7EB164AE91400FA874A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194E7EA164AE91400FA874A /* Foundation.framework */; };
+		6194E7ED164AE91400FA874A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194E7EC164AE91400FA874A /* CoreGraphics.framework */; };
+		6194E7F3164AE91400FA874A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6194E7F1164AE91400FA874A /* InfoPlist.strings */; };
+		6194E7F5164AE91400FA874A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6194E7F4164AE91400FA874A /* main.m */; };
+		6194E7F9164AE91400FA874A /* GMeterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6194E7F8164AE91400FA874A /* GMeterAppDelegate.m */; };
+		6194E7FB164AE91400FA874A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E7FA164AE91400FA874A /* Default.png */; };
+		6194E7FD164AE91400FA874A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E7FC164AE91400FA874A /* Default@2x.png */; };
+		6194E7FF164AE91500FA874A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E7FE164AE91400FA874A /* Default-568h@2x.png */; };
+		6194E802164AE91500FA874A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6194E800164AE91500FA874A /* MainStoryboard.storyboard */; };
+		6194E807164AE91500FA874A /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E806164AE91500FA874A /* first.png */; };
+		6194E809164AE91500FA874A /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E808164AE91500FA874A /* first@2x.png */; };
+		6194E80E164AE91500FA874A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E80D164AE91500FA874A /* second.png */; };
+		6194E810164AE91500FA874A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194E80F164AE91500FA874A /* second@2x.png */; };
+		6194E818164AE91500FA874A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194E817164AE91500FA874A /* SenTestingKit.framework */; };
+		6194E819164AE91500FA874A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194E7E8164AE91400FA874A /* UIKit.framework */; };
+		6194E81A164AE91500FA874A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194E7EA164AE91400FA874A /* Foundation.framework */; };
+		6194E822164AE91500FA874A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6194E820164AE91500FA874A /* InfoPlist.strings */; };
+		6194E825164AE91500FA874A /* GMeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6194E824164AE91500FA874A /* GMeterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6184443716DDB4110025E244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6184443116DDB4110025E244 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		6184443F16DDB6C10025E244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6184443116DDB4110025E244 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		6185F41416D973BD008D55EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6185F40816D973BD008D55EA /* ZipKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ZipKit;
+		};
+		6185F41616D973BD008D55EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6185F40816D973BD008D55EA /* ZipKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB9B9CB6109F665C003E3F8B;
+			remoteInfo = zipkit;
+		};
+		6185F41816D973BD008D55EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6185F40816D973BD008D55EA /* ZipKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB9B9CEE109F6769003E3F8B;
+			remoteInfo = touchzipkit;
+		};
+		6194E81B164AE91500FA874A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6194E7DB164AE91400FA874A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6194E7E3164AE91400FA874A;
+			remoteInfo = GMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6180026F16FEB351001FA3F3 /* GMeterMapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterMapOverlay.h; sourceTree = SOURCE_ROOT; };
+		6180027016FEB351001FA3F3 /* GMeterMapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterMapOverlay.m; sourceTree = SOURCE_ROOT; };
+		6180027716FEBB70001FA3F3 /* GMeterMapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterMapOverlayView.h; sourceTree = SOURCE_ROOT; };
+		6180027816FEBB70001FA3F3 /* GMeterMapOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterMapOverlayView.m; sourceTree = SOURCE_ROOT; };
+		6180F16A16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerSHour.h; sourceTree = SOURCE_ROOT; };
+		6180F16B16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerSHour.m; sourceTree = SOURCE_ROOT; };
+		61827450164BB9D600D521FD /* GMeterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterAnnotation.h; sourceTree = "<group>"; };
+		61827451164BB9D600D521FD /* GMeterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterAnnotation.m; sourceTree = "<group>"; };
+		618426D216E407D90068A4A8 /* GMeterXMLDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandler.m; sourceTree = SOURCE_ROOT; };
+		618426DD16E411780068A4A8 /* GMeterXMLDataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandler.h; sourceTree = SOURCE_ROOT; };
+		618426E716E412D00068A4A8 /* GMeterXMLDataHandlerMHour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerMHour.h; sourceTree = SOURCE_ROOT; };
+		618426E816E412D00068A4A8 /* GMeterXMLDataHandlerMHour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerMHour.m; sourceTree = SOURCE_ROOT; };
+		618426EA16E420870068A4A8 /* GMeterXMLDataHandlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerFactory.h; sourceTree = SOURCE_ROOT; };
+		618426EB16E420870068A4A8 /* GMeterXMLDataHandlerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerFactory.m; sourceTree = SOURCE_ROOT; };
+		6184443116DDB4110025E244 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "CorePlot_1.1/Source/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		6184848216FF76CF00E43D7A /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		6184848916FF867B00E43D7A /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		6184C36016E6C9AC00CF6B00 /* GMeterScatterPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterScatterPlotViewController.h; sourceTree = "<group>"; };
+		6184C36116E6C9AC00CF6B00 /* GMeterScatterPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterScatterPlotViewController.m; sourceTree = "<group>"; };
+		6185123C1654A5E2009FD893 /* GMeterFileContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterFileContentViewController.h; sourceTree = "<group>"; };
+		6185123D1654A5E2009FD893 /* GMeterFileContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterFileContentViewController.m; sourceTree = "<group>"; };
+		6185124016552466009FD893 /* GMeterUserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterUserListViewController.h; sourceTree = SOURCE_ROOT; };
+		6185124116552466009FD893 /* GMeterUserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterUserListViewController.m; sourceTree = SOURCE_ROOT; };
+		6185890616F5070900779B90 /* GMeterXMLDataHandlerMMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerMMonth.h; sourceTree = SOURCE_ROOT; };
+		6185890716F5070900779B90 /* GMeterXMLDataHandlerMMonth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerMMonth.m; sourceTree = SOURCE_ROOT; };
+		6185890C16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerSDay.h; sourceTree = SOURCE_ROOT; };
+		6185890D16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerSDay.m; sourceTree = SOURCE_ROOT; };
+		618592EE16F6022200EB6B2A /* GMeterXMLDataHandlerMDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerMDay.h; sourceTree = SOURCE_ROOT; };
+		618592EF16F6022200EB6B2A /* GMeterXMLDataHandlerMDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerMDay.m; sourceTree = SOURCE_ROOT; };
+		6185D80916C53473003FD52F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6185F40816D973BD008D55EA /* ZipKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZipKit.xcodeproj; path = "kolpanic-zipkit-531cd75fef32/ZipKit.xcodeproj"; sourceTree = "<group>"; };
+		61863F20165186730024FBCB /* GMeterFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterFileListViewController.h; sourceTree = "<group>"; };
+		61863F21165186730024FBCB /* GMeterFileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterFileListViewController.m; sourceTree = "<group>"; };
+		61863F26165190AF0024FBCB /* GMeterBarGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterBarGraphViewController.h; sourceTree = "<group>"; };
+		61863F27165190AF0024FBCB /* GMeterBarGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterBarGraphViewController.m; sourceTree = "<group>"; };
+		6186559B164EDAE70095A597 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		618AA1B616502CCE0026FFFE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		618C47B8164B1F71006659E4 /* GMeterMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterMapViewController.h; sourceTree = SOURCE_ROOT; };
+		618C47B9164B1F71006659E4 /* GMeterMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterMapViewController.m; sourceTree = SOURCE_ROOT; };
+		618C47BC164B2069006659E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		618CBBCD16506710001BD7EC /* GMeterUserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterUserDetailViewController.h; sourceTree = "<group>"; };
+		618CBBCE16506710001BD7EC /* GMeterUserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterUserDetailViewController.m; sourceTree = "<group>"; };
+		618CBBD316508CCD001BD7EC /* GMeterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterModel.h; sourceTree = SOURCE_ROOT; };
+		618CBBD416508CCE001BD7EC /* GMeterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterModel.m; sourceTree = SOURCE_ROOT; };
+		618D894916543BD500325E38 /* GMeterBarGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterBarGraphView.h; sourceTree = "<group>"; };
+		618D894A16543BD500325E38 /* GMeterBarGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterBarGraphView.m; sourceTree = "<group>"; };
+		61947C4D16F012770071935E /* GMeterXMLDataHandlerSMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMeterXMLDataHandlerSMonth.h; sourceTree = SOURCE_ROOT; };
+		61947C4E16F012770071935E /* GMeterXMLDataHandlerSMonth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMeterXMLDataHandlerSMonth.m; sourceTree = SOURCE_ROOT; };
+		6194E7E4164AE91400FA874A /* GMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6194E7E8164AE91400FA874A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6194E7EA164AE91400FA874A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6194E7EC164AE91400FA874A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6194E7F0164AE91400FA874A /* GMeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GMeter-Info.plist"; sourceTree = "<group>"; };
+		6194E7F2164AE91400FA874A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6194E7F4164AE91400FA874A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6194E7F6164AE91400FA874A /* GMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMeter-Prefix.pch"; sourceTree = "<group>"; };
+		6194E7F7164AE91400FA874A /* GMeterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMeterAppDelegate.h; sourceTree = "<group>"; };
+		6194E7F8164AE91400FA874A /* GMeterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMeterAppDelegate.m; sourceTree = "<group>"; };
+		6194E7FA164AE91400FA874A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6194E7FC164AE91400FA874A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6194E7FE164AE91400FA874A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6194E801164AE91500FA874A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6194E806164AE91500FA874A /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		6194E808164AE91500FA874A /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		6194E80D164AE91500FA874A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		6194E80F164AE91500FA874A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		6194E816164AE91500FA874A /* GMeterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMeterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6194E817164AE91500FA874A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6194E81F164AE91500FA874A /* GMeterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GMeterTests-Info.plist"; sourceTree = "<group>"; };
+		6194E821164AE91500FA874A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6194E823164AE91500FA874A /* GMeterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMeterTests.h; sourceTree = "<group>"; };
+		6194E824164AE91500FA874A /* GMeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMeterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6194E7E1164AE91400FA874A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6184444216DDB7660025E244 /* QuartzCore.framework in Frameworks */,
+				6184444116DDB6F70025E244 /* libCorePlot-CocoaTouch.a in Frameworks */,
+				6185F41A16D973C8008D55EA /* libtouchzipkit.a in Frameworks */,
+				6185D80A16C53473003FD52F /* libz.dylib in Frameworks */,
+				618AA1B716502CCE0026FFFE /* GameKit.framework in Frameworks */,
+				618C47BD164B2069006659E4 /* MapKit.framework in Frameworks */,
+				6194E7E9164AE91400FA874A /* UIKit.framework in Frameworks */,
+				6194E7EB164AE91400FA874A /* Foundation.framework in Frameworks */,
+				6194E7ED164AE91400FA874A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6194E812164AE91500FA874A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6194E818164AE91500FA874A /* SenTestingKit.framework in Frameworks */,
+				6194E819164AE91500FA874A /* UIKit.framework in Frameworks */,
+				6194E81A164AE91500FA874A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6184443216DDB4110025E244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6184443816DDB4110025E244 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6185F40916D973BD008D55EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6185F41516D973BD008D55EA /* ZipKit.framework */,
+				6185F41716D973BD008D55EA /* libzipkit.a */,
+				6185F41916D973BD008D55EA /* libtouchzipkit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6194E7D9164AE91400FA874A = {
+			isa = PBXGroup;
+			children = (
+				6194E7EE164AE91400FA874A /* GMeter */,
+				6194E81D164AE91500FA874A /* GMeterTests */,
+				6194E7E7164AE91400FA874A /* Frameworks */,
+				6194E7E5164AE91400FA874A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6194E7E5164AE91400FA874A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6194E7E4164AE91400FA874A /* GMeter.app */,
+				6194E816164AE91500FA874A /* GMeterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6194E7E7164AE91400FA874A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6184443116DDB4110025E244 /* CorePlot-CocoaTouch.xcodeproj */,
+				6185F40816D973BD008D55EA /* ZipKit.xcodeproj */,
+				6185D80916C53473003FD52F /* libz.dylib */,
+				618AA1B616502CCE0026FFFE /* GameKit.framework */,
+				618C47BC164B2069006659E4 /* MapKit.framework */,
+				6186559B164EDAE70095A597 /* QuartzCore.framework */,
+				6194E7E8164AE91400FA874A /* UIKit.framework */,
+				6194E7EA164AE91400FA874A /* Foundation.framework */,
+				6194E7EC164AE91400FA874A /* CoreGraphics.framework */,
+				6194E817164AE91500FA874A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6194E7EE164AE91400FA874A /* GMeter */ = {
+			isa = PBXGroup;
+			children = (
+				6184848916FF867B00E43D7A /* car.png */,
+				6184848216FF76CF00E43D7A /* overlay.png */,
+				6185890C16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.h */,
+				6185890D16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.m */,
+				6185890616F5070900779B90 /* GMeterXMLDataHandlerMMonth.h */,
+				6185890716F5070900779B90 /* GMeterXMLDataHandlerMMonth.m */,
+				61947C4D16F012770071935E /* GMeterXMLDataHandlerSMonth.h */,
+				61947C4E16F012770071935E /* GMeterXMLDataHandlerSMonth.m */,
+				618426EA16E420870068A4A8 /* GMeterXMLDataHandlerFactory.h */,
+				618426EB16E420870068A4A8 /* GMeterXMLDataHandlerFactory.m */,
+				618592EE16F6022200EB6B2A /* GMeterXMLDataHandlerMDay.h */,
+				618592EF16F6022200EB6B2A /* GMeterXMLDataHandlerMDay.m */,
+				6180F16A16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.h */,
+				6180F16B16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.m */,
+				618426E716E412D00068A4A8 /* GMeterXMLDataHandlerMHour.h */,
+				618426E816E412D00068A4A8 /* GMeterXMLDataHandlerMHour.m */,
+				618426DD16E411780068A4A8 /* GMeterXMLDataHandler.h */,
+				618426D216E407D90068A4A8 /* GMeterXMLDataHandler.m */,
+				6185124016552466009FD893 /* GMeterUserListViewController.h */,
+				6185124116552466009FD893 /* GMeterUserListViewController.m */,
+				61863F26165190AF0024FBCB /* GMeterBarGraphViewController.h */,
+				61863F27165190AF0024FBCB /* GMeterBarGraphViewController.m */,
+				61863F20165186730024FBCB /* GMeterFileListViewController.h */,
+				61863F21165186730024FBCB /* GMeterFileListViewController.m */,
+				618CBBD316508CCD001BD7EC /* GMeterModel.h */,
+				618CBBD416508CCE001BD7EC /* GMeterModel.m */,
+				618CBBCD16506710001BD7EC /* GMeterUserDetailViewController.h */,
+				618CBBCE16506710001BD7EC /* GMeterUserDetailViewController.m */,
+				61827450164BB9D600D521FD /* GMeterAnnotation.h */,
+				61827451164BB9D600D521FD /* GMeterAnnotation.m */,
+				618C47B8164B1F71006659E4 /* GMeterMapViewController.h */,
+				618C47B9164B1F71006659E4 /* GMeterMapViewController.m */,
+				6180026F16FEB351001FA3F3 /* GMeterMapOverlay.h */,
+				6180027016FEB351001FA3F3 /* GMeterMapOverlay.m */,
+				6180027716FEBB70001FA3F3 /* GMeterMapOverlayView.h */,
+				6180027816FEBB70001FA3F3 /* GMeterMapOverlayView.m */,
+				6194E7F7164AE91400FA874A /* GMeterAppDelegate.h */,
+				6194E7F8164AE91400FA874A /* GMeterAppDelegate.m */,
+				6194E800164AE91500FA874A /* MainStoryboard.storyboard */,
+				6184C36016E6C9AC00CF6B00 /* GMeterScatterPlotViewController.h */,
+				6184C36116E6C9AC00CF6B00 /* GMeterScatterPlotViewController.m */,
+				618D894916543BD500325E38 /* GMeterBarGraphView.h */,
+				618D894A16543BD500325E38 /* GMeterBarGraphView.m */,
+				6185123C1654A5E2009FD893 /* GMeterFileContentViewController.h */,
+				6185123D1654A5E2009FD893 /* GMeterFileContentViewController.m */,
+				6194E806164AE91500FA874A /* first.png */,
+				6194E808164AE91500FA874A /* first@2x.png */,
+				6194E80D164AE91500FA874A /* second.png */,
+				6194E80F164AE91500FA874A /* second@2x.png */,
+				6194E7EF164AE91400FA874A /* Supporting Files */,
+			);
+			path = GMeter;
+			sourceTree = "<group>";
+		};
+		6194E7EF164AE91400FA874A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6194E7F0164AE91400FA874A /* GMeter-Info.plist */,
+				6194E7F1164AE91400FA874A /* InfoPlist.strings */,
+				6194E7F4164AE91400FA874A /* main.m */,
+				6194E7F6164AE91400FA874A /* GMeter-Prefix.pch */,
+				6194E7FA164AE91400FA874A /* Default.png */,
+				6194E7FC164AE91400FA874A /* Default@2x.png */,
+				6194E7FE164AE91400FA874A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6194E81D164AE91500FA874A /* GMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6194E823164AE91500FA874A /* GMeterTests.h */,
+				6194E824164AE91500FA874A /* GMeterTests.m */,
+				6194E81E164AE91500FA874A /* Supporting Files */,
+			);
+			path = GMeterTests;
+			sourceTree = "<group>";
+		};
+		6194E81E164AE91500FA874A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6194E81F164AE91500FA874A /* GMeterTests-Info.plist */,
+				6194E820164AE91500FA874A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6194E7E3164AE91400FA874A /* GMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6194E828164AE91500FA874A /* Build configuration list for PBXNativeTarget "GMeter" */;
+			buildPhases = (
+				6194E7E0164AE91400FA874A /* Sources */,
+				6194E7E1164AE91400FA874A /* Frameworks */,
+				6194E7E2164AE91400FA874A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6184444016DDB6C10025E244 /* PBXTargetDependency */,
+			);
+			name = GMeter;
+			productName = GMeter;
+			productReference = 6194E7E4164AE91400FA874A /* GMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6194E815164AE91500FA874A /* GMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6194E82B164AE91500FA874A /* Build configuration list for PBXNativeTarget "GMeterTests" */;
+			buildPhases = (
+				6194E811164AE91500FA874A /* Sources */,
+				6194E812164AE91500FA874A /* Frameworks */,
+				6194E813164AE91500FA874A /* Resources */,
+				6194E814164AE91500FA874A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6194E81C164AE91500FA874A /* PBXTargetDependency */,
+			);
+			name = GMeterTests;
+			productName = GMeterTests;
+			productReference = 6194E816164AE91500FA874A /* GMeterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6194E7DB164AE91400FA874A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GMeter;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Hao Guo";
+			};
+			buildConfigurationList = 6194E7DE164AE91400FA874A /* Build configuration list for PBXProject "GMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 6194E7D9164AE91400FA874A;
+			productRefGroup = 6194E7E5164AE91400FA874A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6184443216DDB4110025E244 /* Products */;
+					ProjectRef = 6184443116DDB4110025E244 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+				{
+					ProductGroup = 6185F40916D973BD008D55EA /* Products */;
+					ProjectRef = 6185F40816D973BD008D55EA /* ZipKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6194E7E3164AE91400FA874A /* GMeter */,
+				6194E815164AE91500FA874A /* GMeterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6184443816DDB4110025E244 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 6184443716DDB4110025E244 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6185F41516D973BD008D55EA /* ZipKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZipKit.framework;
+			remoteRef = 6185F41416D973BD008D55EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6185F41716D973BD008D55EA /* libzipkit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzipkit.a;
+			remoteRef = 6185F41616D973BD008D55EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6185F41916D973BD008D55EA /* libtouchzipkit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtouchzipkit.a;
+			remoteRef = 6185F41816D973BD008D55EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6194E7E2164AE91400FA874A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6194E7F3164AE91400FA874A /* InfoPlist.strings in Resources */,
+				6194E7FB164AE91400FA874A /* Default.png in Resources */,
+				6194E7FD164AE91400FA874A /* Default@2x.png in Resources */,
+				6194E7FF164AE91500FA874A /* Default-568h@2x.png in Resources */,
+				6194E802164AE91500FA874A /* MainStoryboard.storyboard in Resources */,
+				6194E807164AE91500FA874A /* first.png in Resources */,
+				6194E809164AE91500FA874A /* first@2x.png in Resources */,
+				6194E80E164AE91500FA874A /* second.png in Resources */,
+				6194E810164AE91500FA874A /* second@2x.png in Resources */,
+				6184848316FF76CF00E43D7A /* overlay.png in Resources */,
+				6184848A16FF867B00E43D7A /* car.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6194E813164AE91500FA874A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6194E822164AE91500FA874A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6194E814164AE91500FA874A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6194E7E0164AE91400FA874A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6194E7F5164AE91400FA874A /* main.m in Sources */,
+				6194E7F9164AE91400FA874A /* GMeterAppDelegate.m in Sources */,
+				61827452164BB9D600D521FD /* GMeterAnnotation.m in Sources */,
+				618CBBCF16506710001BD7EC /* GMeterUserDetailViewController.m in Sources */,
+				618CBBD516508CCE001BD7EC /* GMeterModel.m in Sources */,
+				61863F22165186730024FBCB /* GMeterFileListViewController.m in Sources */,
+				61863F28165190AF0024FBCB /* GMeterBarGraphViewController.m in Sources */,
+				618D894B16543BD500325E38 /* GMeterBarGraphView.m in Sources */,
+				6185123E1654A5E2009FD893 /* GMeterFileContentViewController.m in Sources */,
+				6185124216552466009FD893 /* GMeterUserListViewController.m in Sources */,
+				618426D316E407D90068A4A8 /* GMeterXMLDataHandler.m in Sources */,
+				618426E916E412D00068A4A8 /* GMeterXMLDataHandlerMHour.m in Sources */,
+				618426EC16E420870068A4A8 /* GMeterXMLDataHandlerFactory.m in Sources */,
+				6180F16916E4249900E5CE19 /* GMeterMapViewController.m in Sources */,
+				6180F16C16E4251300E5CE19 /* GMeterXMLDataHandlerSHour.m in Sources */,
+				6184C36216E6C9AD00CF6B00 /* GMeterScatterPlotViewController.m in Sources */,
+				61947C4F16F012770071935E /* GMeterXMLDataHandlerSMonth.m in Sources */,
+				6185890816F5070900779B90 /* GMeterXMLDataHandlerMMonth.m in Sources */,
+				6185890E16F52F6F00779B90 /* GMeterXMLDataHandlerSDay.m in Sources */,
+				618592F016F6022200EB6B2A /* GMeterXMLDataHandlerMDay.m in Sources */,
+				6180027116FEB351001FA3F3 /* GMeterMapOverlay.m in Sources */,
+				6180027916FEBB70001FA3F3 /* GMeterMapOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6194E811164AE91500FA874A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6194E825164AE91500FA874A /* GMeterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6184444016DDB6C10025E244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 6184443F16DDB6C10025E244 /* PBXContainerItemProxy */;
+		};
+		6194E81C164AE91500FA874A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6194E7E3164AE91400FA874A /* GMeter */;
+			targetProxy = 6194E81B164AE91500FA874A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6194E7F1164AE91400FA874A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6194E7F2164AE91400FA874A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6194E800164AE91500FA874A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6194E801164AE91500FA874A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		6194E820164AE91500FA874A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6194E821164AE91500FA874A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6194E826164AE91500FA874A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6194E827164AE91500FA874A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6194E829164AE91500FA874A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/CorePlot_1.0/Binaries/MacOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMeter/GMeter-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/haoguo/Desktop/GMeter/CorePlot_1.1/Source/\"/**",
+					"\"../..\"",
+				);
+				INFOPLIST_FILE = "GMeter/GMeter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/CorePlot_1.0/Binaries/iOS\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6194E82A164AE91500FA874A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/CorePlot_1.0/Binaries/MacOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMeter/GMeter-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/haoguo/Desktop/GMeter/CorePlot_1.1/Source/\"/**",
+					"\"../..\"",
+				);
+				INFOPLIST_FILE = "GMeter/GMeter-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/CorePlot_1.0/Binaries/iOS\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6194E82C164AE91500FA874A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMeter.app/GMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMeter/GMeter-Prefix.pch";
+				INFOPLIST_FILE = "GMeterTests/GMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6194E82D164AE91500FA874A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMeter.app/GMeter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMeter/GMeter-Prefix.pch";
+				INFOPLIST_FILE = "GMeterTests/GMeterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6194E7DE164AE91400FA874A /* Build configuration list for PBXProject "GMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6194E826164AE91500FA874A /* Debug */,
+				6194E827164AE91500FA874A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6194E828164AE91500FA874A /* Build configuration list for PBXNativeTarget "GMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6194E829164AE91500FA874A /* Debug */,
+				6194E82A164AE91500FA874A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6194E82B164AE91500FA874A /* Build configuration list for PBXNativeTarget "GMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6194E82C164AE91500FA874A /* Debug */,
+				6194E82D164AE91500FA874A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6194E7DB164AE91400FA874A /* Project object */;
+}
